@@ -127,7 +127,7 @@ section{
     color:#009e66
 }
 .contentBx{
-    padding-left:40px;
+    padding-left: 65px;
     text-align: justify;
 }
 .contentBx h2{
@@ -538,4 +538,17 @@ footer.copyright{
         align-items: center;
         flex-direction:column;
     }
+}
+/*------------------------------------------------------------------------------------------------*/
+
+.vin-p {
+    font-size: 110%;
+    color: #40514E;
+    font-weight: bold;
+    line-height: 2;
+}
+
+
+.about{
+    align-items: center;
 }
