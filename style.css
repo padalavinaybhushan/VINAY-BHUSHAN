@@ -7,6 +7,25 @@
     scroll-behavior: smooth;
 }
 
+/*------------------    NEW SECTION     -----------------------------*/
+
+
+
+.vin-p {
+    font-size: 110%;
+    color: #40514E;
+    font-weight: bold;
+    line-height: 2;
+}
+
+
+.about{
+    align-items: center;
+}
+
+/*------------------    NEW SECTION     -----------------------------*/
+
+
 header1{
     position:fixed;
     top:0;
@@ -648,17 +667,207 @@ element.style {
 
 /*------------------    NEW SECTION     -----------------------------*/
 
+/*----------------------    card section    --------------------*/
+/*   more-about section  */
 
+/*   more-about section  */
 
-.vin-p {
-    font-size: 110%;
-    color: #40514E;
-    font-weight: bold;
-    line-height: 2;
-}
+/*---------------------------   card-section-starting   --------------------------*/
 
-
-.about{
+section-card{
+    display: flex;
+    justify-content: center;
     align-items: center;
+    background: #16384c;
 }
+
+.container-card{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.container-card .card-con{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #ffffff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0,0, 0.5);
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.container-card .card-con:hover{
+    height: 420px;
+}
+
+.container-card .card-con .imgx{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0,0, 0.2);
+}
+
+.container-card .card-con .imgx img{
+    max-width: 100%;
+    border-radius: 4px;
+   
+   
+}
+
+
+img{
+    width: 100%;
+    height: 180px;
+     
+ }
+
+.card-con:hover img{
+   width: 100%;
+   height: 100%;
+    
+}
+
+.container-card .card-con .card-content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container-card .card-con:hover .card-content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+.vin-card{
+    align-items: center;
+    justify-content: space-around;
+   
+   
+}
+.container-card{
+    margin: auto;
+}
+
+
+/*--------------------------------  hover effect    ------------------------*/
+
+.container-card .card-con span{
+    transition: 0.5s;
+    opacity: 0;
+
+}
+.container-card .card-con:hover span{
+    transition: 0.5s;
+    opacity: 1;
+
+}
+
+.container-card .card-con span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right,transparent,#f8fc02);
+    animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1
+{
+    0%
+    {
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+.container-card .card-con span:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(to bottom,transparent,#f8fc02);
+    animation: animate2 2s linear infinite;
+    animation-delay: 3s;
+}
+
+@keyframes animate2
+{
+    0%
+    {
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+
+
+
+.container-card .card-con span:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to top,transparent,#f8fc02);
+    animation: animate3 2s linear infinite;
+}
+
+@keyframes animate3
+{
+    0%
+    {
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.container-card .card-con span:nth-child(4){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(to right,transparent,#f8fc02);
+    animation: animate4 2s linear infinite;
+    animation-delay: 3s;
+}
+
+@keyframes animate4
+{
+    0%
+    {
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+
+/*--------------------------    card-section-ending     ---------------------------*/
 
