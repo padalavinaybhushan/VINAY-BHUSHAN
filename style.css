@@ -6,7 +6,27 @@
     font-family: 'Poppins',sans-serif;
     scroll-behavior: smooth;
 }
-header{
+
+/*------------------    NEW SECTION     -----------------------------*/
+
+
+
+.vin-p {
+    font-size: 110%;
+    color: #40514E;
+    font-weight: bold;
+    line-height: 2;
+}
+
+
+.about{
+    align-items: center;
+}
+
+/*------------------    NEW SECTION     -----------------------------*/
+
+
+header1{
     position:fixed;
     top:0;
     left:0;
@@ -22,7 +42,7 @@ header{
     -ms-transition:0.5s;
     -o-transition:0.5s;
 }
-header .logo{
+header1 .logo{
     color:#fff;
     font-size:24px;
     text-transform: uppercase;
@@ -30,15 +50,15 @@ header .logo{
     font-weight: 700;
     letter-spacing: 2px;
 }
-header ul{
+header1 ul{
     position: relative;
     display:flex;
 }
-header ul li{
+header1 ul li{
     position:relative;
     list-style: none;
 }
-header ul li a{
+header1 ul li a{
     position: relative;
     display:inline-block;
     margin:0 15px;
@@ -46,15 +66,15 @@ header ul li a{
     text-decoration: none;
 }
 /* Creating Stiky Header Menu Nav Bar */
-header.sticky{
+header1.sticky{
     background:#fff;
     padding:20px 100px;
     box-shadow:0 5px 20px rgba(0,0,0,0.1);
 }
-header.sticky .logo{
+header1.sticky .logo{
     color:#111;
 }
-header.sticky ul li a{
+header1.sticky ul li a{
     color:#111;
 }
 
@@ -127,7 +147,7 @@ section{
     color:#009e66
 }
 .contentBx{
-    padding-left: 65px;
+    padding-left:40px;
     text-align: justify;
 }
 .contentBx h2{
@@ -393,16 +413,16 @@ footer.copyright{
 }
 @media (max-width: 991px)
 {
-    header,
-    header.sticky{
+    header1,
+    header1.sticky{
         padding:20px 50px;
 		z-index:2;
     }
-    header .menu{
+    header1 .menu{
         display:none;
         z-index:1;
     }
-    header .menu{
+    header1 .menu{
         position:fixed;
         background:#fff;
         display:block;
@@ -419,7 +439,7 @@ footer.copyright{
         -ms-transition:0.5s;
         -o-transition:0.5s;
 }
-    header .menu.active{
+    header1 .menu.active{
         position: fixed;
         top: 75px;
         left: 0;
@@ -430,7 +450,7 @@ footer.copyright{
         height: 100vh;
         background: #fff;
     }
-    header ul li a{
+    header1 ul li a{
         font-size: 20px;
         font-weight: 400;
         color:#111;
@@ -454,7 +474,7 @@ footer.copyright{
         background-repeat:no-repeat;
         cursor:pointer;
     }
-    header.sticky .toggle{
+    header1.sticky .toggle{
         filter:invert(1);    ;
         -webkit-filter:invert(1)    ;
     }
@@ -539,16 +559,525 @@ footer.copyright{
         flex-direction:column;
     }
 }
-/*------------------------------------------------------------------------------------------------*/
 
-.vin-p {
-    font-size: 110%;
-    color: #40514E;
-    font-weight: bold;
-    line-height: 2;
+/*------------------    NEW SECTION     -----------------------------*/
+
+.pb-5, .py-5 {
+    padding-bottom: 3rem !important;
+    padding-top: 3rem !important;
 }
 
 
-.about{
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.row1{
+    padding-left: 30px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: 25px;
+    margin-top: 10px;
+    padding-left: 30px;
+}
+
+
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.progress {
+    height: 10px;
+    margin-bottom: 2.5em;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.progress {
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: 0.75rem;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+}
+
+
+element.style {
+    width: 75%;
+}
+.progress-bar {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.progress-bar-striped {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-size: 1rem 1rem;
+}
+
+.progress-bar1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #00d679;
+    transition: width 0.6s ease;
+}
+
+.vin-progress-span{
+    justify-content: space-around;
+}
+
+.vin-progress-myskill{
+    align-items: center;
+    text-align: center;
+}
+
+
+.vin-icon{
+   
+    color:#00d679 ;
+}
+
+.vin-icon:hover{
+    color: rgb(240, 18, 18);
+}
+
+
+
+/*------------------    NEW SECTION     -----------------------------*/
+
+/*----------------------    card section    --------------------*/
+/*   more-about section  */
+
+/*   more-about section  */
+
+/*---------------------------   card-section-starting   --------------------------*/
+
+section-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #16384c;
+}
+
+.container-card{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.container-card .card-con{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #ffffff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0,0, 0.5);
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.container-card .card-con:hover{
+    height: 420px;
+}
+
+.container-card .card-con .imgx{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0,0, 0.2);
+}
+
+.container-card .card-con .imgx img{
+    max-width: 100%;
+    border-radius: 4px;
+   
+   
+}
+
+
+img{
+    width: 100%;
+    height: 180px;
+     
+ }
+
+.card-con:hover img{
+   width: 100%;
+   height: 100%;
+    
+}
+
+.container-card .card-con .card-content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container-card .card-con:hover .card-content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+.vin-card{
+    align-items: center;
+    justify-content: space-around;
+   
+   
+}
+.container-card{
+    margin: auto;
+}
+
+
+/*--------------------------------  hover effect    ------------------------*/
+
+.container-card .card-con span{
+    transition: 0.5s;
+    opacity: 0;
+
+}
+.container-card .card-con:hover span{
+    transition: 0.5s;
+    opacity: 1;
+
+}
+
+.container-card .card-con span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right,transparent,#f8fc02);
+    animation: animate1 2s linear infinite;
+}
+
+
+.bhu-card{
+    background-color: white;
+}
+
+.bhu-card:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+.bhu-con{
+    color: white;
+}
+@keyframes animate1
+{
+    0%
+    {
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+.container-card .card-con span:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom,transparent,#f8fc02);
+    animation: animate2 2s linear infinite;
+    animation-delay: 3s;
+}
+
+@keyframes animate2
+{
+    0%
+    {
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+
+
+
+.container-card .card-con span:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to top,transparent,#f8fc02);
+    animation: animate3 2s linear infinite;
+}
+
+@keyframes animate3
+{
+    0%
+    {
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.container-card .card-con span:nth-child(4){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to right,transparent,#f8fc02);
+    animation: animate4 2s linear infinite;
+    animation-delay: 3s;
+}
+
+@keyframes animate4
+{
+    0%
+    {
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+/*--------------------------    card-section-ending     ---------------------------*/
+
+/*-------------------------     education time line     -----------------------------*/
+
+
+section-time{
+    display: flex;
+    padding-left: 5rem;
+    padding-right:5rem ;
+    padding-top: 2.5rem;
+    background: #16384c;
+    min-height: 75vh;
+}
+
+.heading-time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #16384c;
+    font-weight: 700;
+    line-height: 42px;
+}
+
+.heading-time h2{
+    margin-top: 3rem;
+    color: #f2f3f7;
+}
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    
+}
+
+.timeline ul li {
+    margin-bottom: 50px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
     align-items: center;
 }
+
+.point {
+    min-width: 20px;
+    height: 20px;
+    background-color: #be9fe1;
+    border-radius: 100%;
+    z-index: 2;
+    border: 3px #191a19 solid;
+    position: relative;
+    left: 1px;
+}
+
+.timeline ul li .content-time {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.timeline ul li:nth-child(odd) .content-time {
+    padding-left: 0;
+}
+
+.timeline ul li:nth-child(odd) .date {
+    padding-right: 0;
+}
+
+.timeline ul li:nth-child(even) .content-time {
+    padding-right: 0;
+}
+
+.timeline ul li:nth-child(even) .date {
+    padding-left: 0;
+}
+
+.timeline ul li .date {
+    width: 50%;
+    padding: 0 20px;
+    font-weight: normal;
+   
+}
+
+.timeline ul li .date h4 {
+    background-color: #4d6877;
+    width: 100px;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: medium;
+    border-color: white;
+    color: white;
+
+}
+
+.timeline ul li .content-time h3 {
+    padding: 10px 20px;
+    /* background-color: #be9fe1; */
+    background-color: #eaeee5;
+    margin-bottom: 0;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.timeline ul li .content-time p {
+    padding: 10px 20px;
+    background-color: white;
+    margin-top: 0;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.timeline ul li:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.timeline ul li:nth-child(even) .date h4 {
+    float: right
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    height: 87%;
+    width: 3px;
+    left: 50%;
+    margin-right: 4rem;
+    background-color: #eaeee5;
+    
+}
+
+@media (max-width: 800px) {
+    .point {
+        min-width: 15px;
+        height: 15px;
+    }
+
+    html, body {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 650px) {
+    html, body {
+        font-size: 14px;
+    }
+    
+    .point {
+        min-width: 12px;
+        height: 12px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    html, body {
+        font-size: 10px;
+    }
+
+    p {
+        padding: 10px !important;
+    }
+}
+
+.timeline-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: 1.5rem;
+    background: #eaeee5;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    -moz-box-shadow: 0 0 0 5px #f2f3f7;
+    -webkit-box-shadow: 0 0 0 5px #f2f3f7;
+    box-shadow: 0 0 0 5px #4d6877;
+    line-height: 40px;
+    float: left;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.color-time{
+    background: rgb(180, 233, 56);
+}
+
+
+
+/*-------------------------     education time line  ending  -----------------------------*/
