@@ -26,6 +26,17 @@
     align-items: center;
 }
 
+
+#particles-js {
+    z-index: 9;
+    position: relative;
+    width: 100%;
+    
+}
+.textBx{
+    position: absolute;
+}
+
 /*------------------    NEW SECTION     -----------------------------*/
 
 
