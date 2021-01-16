@@ -37,6 +37,7 @@
     position: absolute;
 }
 
+
 /*------------------    NEW SECTION     -----------------------------*/
 
 
@@ -1153,3 +1154,34 @@ section-time{
 
 
 /*-------------------------     education time line  ending  -----------------------------*/
+
+
+/*-------------------------     responsive ness     ----------------------------------*/
+
+@media (max-width: 991px){
+.contactInfo {
+    margin: 10px 0;
+}
+
+@media (max-width: 991px){
+.particles-js-canvas-el{
+    height: 400px;
+    width: 300px;
+}
+.content-con {
+    flex-direction: column;
+}
+
+@media (max-width: 991px){
+.textBx {
+    position: absolute;
+    top: 250px;
+}
+
+@media (max-width: 991px){
+    .row{
+        padding: 1rem;
+    }
+}
+
+/*-------------------------     responsive ness     ----------------------------------*/
