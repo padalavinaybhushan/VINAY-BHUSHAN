@@ -89,7 +89,8 @@ section{
     position:relative;
     min-height: 100vh;
     background:#111;
-  /*  background:url(images/myPic1.jpg); */
+    box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.5);
+    background: url(images/home-background.jpg);
     background-size:cover;
     background-position: right;
     display:flex;
