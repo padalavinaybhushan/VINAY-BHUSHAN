@@ -222,22 +222,30 @@ img{
 }
 
 /* Creating Work Layout in CSS */
-.work .content{
+.work{
+    background-color: #f4f4f4;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    z-index: 0;
+  
+}
+.work .content-work{
     display:flex;
     justify-content: center;
     flex-wrap:wrap;
     flex-direction:row;
 }
-.work .content .workBx{
+.work .content-work .workBx{
     width:500px;
     padding:20px;
 }
-.work .content .workBx img{
+.work .content-work .workBx img{
     max-width:100%;
     border:1px solid rgba(0,0,0,0.4);
     cursor:pointer;
 }
-.work .content .workBx img:hover{
+.work .content-work .workBx img:hover{
     box-shadow:0 0 20px 5px #ccc;
     transform:scale(1.008);
     -webkit-transform:scale(1.008);
@@ -250,17 +258,16 @@ img{
     -ms-transition:0.5s;
     -o-transition:0.5s;
 }
-.work .content .workBx p{
+.work .content-work .workBx p{
     text-align:center;
 }
-.work .content .workBx a:link,
-.work .content .workBx a:visited,
-.work .content .workBx a:active{
+.work .content-work .workBx a:link,
+.work .content-work .workBx a:visited,
+.work .content-work .workBx a:active{
     color:#161616;
     text-decoration: none;
     font-weight: 600;
 }
-
 /* Creating Testimonial Layout in CSS */
 .testimonial{
     background:#111;
