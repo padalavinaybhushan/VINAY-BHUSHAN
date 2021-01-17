@@ -1171,6 +1171,7 @@ section-time{
 .contactInfo {
     margin: 10px 0;
 }
+}
 
 @media (max-width: 991px){
 .particles-js-canvas-el{
@@ -1180,13 +1181,13 @@ section-time{
 .content-con {
     flex-direction: column;
 }
-
+}
 @media (max-width: 991px){
 .textBx {
     position: absolute;
     top: 250px;
 }
-
+}
 @media (max-width: 991px){
     .row{
         padding: 1rem;
