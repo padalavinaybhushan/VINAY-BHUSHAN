@@ -37,6 +37,15 @@
     position: absolute;
 }
 
+.card-head{
+    font-size: 20px;
+    color: yellow;
+}
+
+card-head-line{
+    color: red;
+}
+
 
 /*------------------    NEW SECTION     -----------------------------*/
 
