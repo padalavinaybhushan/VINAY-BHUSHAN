@@ -1195,3 +1195,42 @@ section-time{
 }
 
 /*-------------------------     responsive ness     ----------------------------------*/
+
+
+/*------------------------- new styling     -----------------------*/
+
+.banner{
+    min-width: 450px;
+}
+
+.about{
+    min-width: 450px;
+}
+
+.heading-time{
+    min-width: 450px;
+}
+
+section-time{
+    min-width: 450px;
+}
+
+#skills{
+    min-width: 450px;
+}
+
+section-card{
+    min-width: 450px;
+}
+
+.work{
+    min-width: 450px;
+}
+
+.contact{
+    min-width: 450px;
+}
+
+footer{
+    min-width: 450px;
+}
