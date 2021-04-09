@@ -404,12 +404,12 @@
                 </div>
             </div>
             <div class="formBx">
-                <form>
+                <form method="post" name="google-sheet">
                     <h3>Message Me</h3>
-                    <input type="text" placeholder="Full Name" name="">
-                    <input type="email" placeholder="Email" name="">
-                    <textarea name="" rows="6" id="" placeholder="Your Message"></textarea>
-                    <input type="submit" value="Send Message" name="">
+                    <input type="text" placeholder="Full Name" name="Name">
+                    <input type="email" placeholder="Email" name="Email">
+                    <textarea name="message" rows="6" id="" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send Message" name="submit">
                 </form>
             </div>
         </div>
@@ -427,5 +427,17 @@
      <!------------------    particle js ------------------->
      <script type="text/javascript" src="particles.js"></script>
      <script type="text/javascript" src="app.js"></script>
+    <!-- google sheet :- https://docs.google.com/spreadsheets/d/1kSYI4v8gyT_ABDVFMdObAlzl8lIOE4ax7XSBTdxNKCs/edit#gid=0 -->
+     <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzMgUnQqgSITOrA2tw5yvapNEzkJs56zbMkY3mDcoWir-ungdH-IQ6jFJjgKHkvl8C8VA/exec'
+        const form = document.forms['google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 </html>
